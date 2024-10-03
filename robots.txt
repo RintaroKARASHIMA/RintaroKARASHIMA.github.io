@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: https://chacole-llc.com/about
+Sitemap: https://chacole-llc.com/sitemap.xml
