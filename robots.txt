@@ -1,3 +1,2 @@
 User-agent: *
-Disallow: https://chacole-llc.com/about
-Sitemap: https://chacole-llc.com/sitemap.xml
+Sitemap: https://rintarokarashima.github.io/sitemap.xml
