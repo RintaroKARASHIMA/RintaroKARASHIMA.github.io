@@ -9,8 +9,8 @@ body {
     line-height: 1.8;
     color: #001D42;
     letter-spacing: 0.05em;
-    font-size: 15px;
-    font-size: 0.9375rem;
+    /* font-size: 25px; */
+    font-size: 1rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -289,18 +289,20 @@ img {
 }
 
 .c-btn::after {
+    content: "";
+    display: inline-block;
     position: absolute;
     top: 50%;
     right: 1.5em;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f0da";
-    transition: 0.3s;
-    -webkit-transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 8px solid #fff; /* コントラストの高い色（例: 白）に変更 */
     transform: translateY(-50%);
-    font-size: 14px;
-    font-size: 0.875rem;
+    transition: 0.3s;
 }
+
 
 .c-btn:hover {
     text-decoration: none;
@@ -420,14 +422,13 @@ img {
     }
 }
 
-.logo {
+/* logo of header */
+.c-logo {
     line-height: 1;
 }
-
-.logo__img {
+.c-logo__img {
     display: block;
 }
-
 
 .c-card__body {
     display: flex;
@@ -910,31 +911,32 @@ img {
 }
 
 
-.p-service__heading {
+
+.p-interest__heading {
     text-align: center;
     margin-bottom: 30px;
 }
-
-.p-service__body {
+.p-interest__body {
     margin-bottom: 30px;
 }
 
-.p-service__link {
+.p-interest__link {
     text-align: center;
 }
 
-.p-about {
-    text-align: center;
+.p-biography{
     background-color: #f0f0f0;
-    
 }
-
-.p-about__heading {
+.p-biography__heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.p-biography__body {
     margin-bottom: 30px;
 }
 
-.p-about__body {
-    margin-bottom: 30px;
+.p-biography__link {
+    text-align: center;
 }
 
 .p-message {
@@ -963,29 +965,28 @@ img {
 }
 
 
-.p-company-info {
+.p-presentation-info {
     text-align: center;
 }
 
-.p-company-info__heading {
+/* .p-presentation__inner { } */
+
+.p-presentation__heading {
     text-align: center;
     margin-bottom: 30px;
 }
-
-.p-company-info__table {
+.p-presentation__table {
     margin-bottom: 30px;
 }
-
-.p-company__link {
-    /* font-weight: bold; */
-    border-bottom: solid 1px #001D42
+.p-presentation__link {
+    text-align: center;
 }
-.p-company__link:hover {
+.p-presentation__link:hover {
     text-decoration: none;
 }
 
+
 .p-contact {
-    margin-top: 40px;
     padding: 80px 0;
     text-align: center;
     background-color: #f0f0f0;
