@@ -982,7 +982,8 @@ img {
     text-align: center;
 }
 .p-presentation__link:hover {
-    text-decoration: none;
+    text-decoration: underline;
+    
 }
 
 
