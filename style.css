@@ -965,23 +965,23 @@ img {
 }
 
 
-.p-presentation-info {
+.p-publication-info {
     text-align: center;
 }
 
-/* .p-presentation__inner { } */
+/* .p-publication__inner { } */
 
-.p-presentation__heading {
+.p-publication__heading {
     text-align: center;
     margin-bottom: 30px;
 }
-.p-presentation__table {
+.p-publication__table {
     margin-bottom: 30px;
 }
-.p-presentation__link {
+.p-publication__link {
     text-align: center;
 }
-.p-presentation__link:hover {
+.p-publication__link:hover {
     text-decoration: underline;
     
 }
