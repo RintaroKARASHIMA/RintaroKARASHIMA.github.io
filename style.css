@@ -969,11 +969,20 @@ img {
     text-align: center;
 }
 
-/* .p-publication__inner { } */
+/* research publication セクションの中央寄せ */
+.p-publication__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .p-publication__heading {
     text-align: center;
     margin-bottom: 30px;
+}
+.p-publication__text {
+    text-align: center;
+    margin-top: 30px;
 }
 .p-publication__table {
     margin-bottom: 30px;
@@ -986,6 +995,15 @@ img {
     
 }
 
+/* publication table のリンクに下線を追加 */
+.c-table01 td a.p-publication__link {
+    text-decoration: underline;
+}
+
+/* publication table の種別列を太字に */
+.c-table01 tbody td:first-child {
+    font-weight: bold;
+}
 
 .p-contact {
     padding: 80px 0;
