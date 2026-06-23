@@ -4,103 +4,53 @@
     <meta charset="UTF-8" />
     <title>Rintaro Karashima | 辛嶋凜太郎</title>
     <meta name="keywords" content="辛嶋,凜太郎,Rintaro,Karashima" />
-    <!-- レスポンシブするよ宣言 -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no"
-    />
-    <!-- ogの設定 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <!-- OG -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Rintaro KARASHIMA | 辛嶋凜太郎" />
-    <meta
-      property="og:description"
-      content="Discover everything about Rintaro Karashima right here."
-    />
+    <meta property="og:description" content="Discover everything about Rintaro Karashima right here." />
     <meta property="og:site_name" content="Rintaro KARASHIMA | 辛嶋凜太郎" />
     <meta property="og:image" content="/img/ogp.png" />
-    <meta
-      name="description"
-      content="Discover everything about Rintaro Karashima right here."
-    />
-
-    <!-- フォント読み込み -->
+    <meta name="description" content="Discover everything about Rintaro Karashima right here." />
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <script
-      src="https://kit.fontawesome.com/41b1f8d62e.js"
-      crossorigin="anonymous"
-      defer
-    ></script>
-
-    <!-- swiper -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css"
-    />
-    <!-- CSS指定 -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/41b1f8d62e.js" crossorigin="anonymous" defer></script>
+    <!-- CSS -->
     <link rel="stylesheet" href="reset.css" type="text/css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
-    <!-- アイコン・ファビコン -->
+    <!-- Icons -->
     <link rel="icon" type="image/png" href="img/icon-192x192.png" />
-    <link
-      rel="apple-touch-icon"
-      type="image/png"
-      href="img/apple-touch-icon-180x180.png"
-    />
+    <link rel="apple-touch-icon" type="image/png" href="img/apple-touch-icon-180x180.png" />
     <link rel="icon" href="img/rk_favicon.ico" />
     <!-- Google tag -->
-    <script
-      src="https://www.googletagmanager.com/gtag/js?id=G-DBHFT68FTQ"
-      defer
-    ></script>
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-DBHFT68FTQ" defer></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
+      function gtag() { dataLayer.push(arguments); }
       gtag("js", new Date());
       gtag("config", "G-DBHFT68FTQ");
     </script>
   </head>
 
   <body>
-    <!-- ヘッダー -->
+    <!-- Header -->
     <header class="l-header">
       <div class="l-header__logo">
         <h1 class="c-logo">
           <a href="." class="c-logo__link">
-            <img
-              class="c-logo__img"
-              src="img/rintarokarashima_logo.svg"
-              alt="rintarokarashima"
-              width="200"
-            />
+            <img class="c-logo__img" src="img/rintarokarashima_logo.svg" alt="rintarokarashima" width="200" />
           </a>
         </h1>
       </div>
       <div class="l-header__nav">
         <nav class="p-global-nav">
           <ul class="p-global-nav__list">
-            <!-- <li class="p-global-nav__item"><a class="p-global-nav__link" href="news.html">news</a></li> -->
-            <li class="p-global-nav__item">
-              <a class="p-global-nav__link" href="#interest">interest</a>
-            </li>
-            <li class="p-global-nav__item">
-              <a class="p-global-nav__link" href="#biography">biography</a>
-            </li>
-            <li class="p-global-nav__item">
-              <a class="p-global-nav__link" href="#publication"
-                >research publication</a
-              >
-            </li>
-            <!-- <li class="p-global-nav__item"><a class="p-global-nav__link" href="recruit.html">recruit</a></li> -->
-            <li class="p-global-nav__item">
-              <a class="p-global-nav__link" href="#contact">contact / SNS</a>
-            </li>
+            <li class="p-global-nav__item"><a class="p-global-nav__link" href="#interest">interest</a></li>
+            <li class="p-global-nav__item"><a class="p-global-nav__link" href="#biography">biography</a></li>
+            <li class="p-global-nav__item"><a class="p-global-nav__link" href="#publication">research publication</a></li>
+            <li class="p-global-nav__item"><a class="p-global-nav__link" href="#contact">contact / SNS</a></li>
           </ul>
         </nav>
       </div>
@@ -109,77 +59,60 @@
       </button>
     </header>
 
+    <!-- Hero -->
     <div class="p-hero">
-      <span class="p-hero__scroll">SCROLL</span>
+      <div class="p-hero__content">
+        <p class="p-hero__eyebrow">Research / Information Science</p>
+        <p class="p-hero__name">Rintaro<br>Karashima</p>
+        <p class="p-hero__subtitle">Data Scientist &middot; Complex Networks<br>Hutzper Inc.</p>
+      </div>
+      <a href="#interest" class="p-hero__scroll" aria-label="Scroll to content">
+        <span>SCROLL</span>
+      </a>
     </div>
 
     <main class="l-content">
-      <!-- Interest Section -->
+
+      <!-- Interest -->
       <section class="p-interest l-section" id="interest">
         <div class="p-interest__inner l-inner">
-          <div class="p-interest__heading">
+          <div class="p-interest__heading c-section-heading js-fade-up">
             <h2 class="c-heading-primary">
               interest<span class="c-heading-primary__sub">主な興味・関心</span>
             </h2>
           </div>
           <div class="p-interest__body">
             <div class="c-card-wrapper c-card-wrapper--col3">
-              <div class="c-card">
-                <div class="c-card__img-wrapper">
-                  <img class="c-card__img" src="img/service01.png" alt="" />
+              <div class="c-card js-fade-up">
+                <div class="c-card__icon-wrapper">
+                  <i class="fa-solid fa-diagram-project c-card__icon"></i>
                 </div>
                 <div class="c-card__body">
-                  <div class="c-card__title">
-                    SOCIAL NETWORK<br />社会ネットワーク
-                  </div>
+                  <div class="c-card__title">COMPLEX NETWORKS<br>複雑ネットワーク</div>
                   <div class="c-card__text">
-                    <p>
-                      Use methods from network science to analyze various
-                      relationships within society, such as social networks,
-                      technological grids, and biological signals. This field
-                      focuses on understanding how these networks evolve, their
-                      robustness, and connectivity patterns.
-                    </p>
+                    <p>Applying network science to understand the structure and dynamics of complex systems — from technological innovation ecosystems to corporate collaboration graphs. My research explores how connectivity patterns drive robustness, efficiency, and the emergence of macro-level behavior from micro-level interactions.</p>
                   </div>
                 </div>
               </div>
-              <div class="c-card">
-                <div class="c-card__img-wrapper">
-                  <img class="c-card__img" src="img/service02.webp" alt="" />
+              <div class="c-card js-fade-up">
+                <div class="c-card__icon-wrapper">
+                  <i class="fa-solid fa-magnifying-glass-chart c-card__icon"></i>
                 </div>
                 <div class="c-card__body">
-                  <div class="c-card__title">
-                    PATENT DATA Analysis<br />特許データ解析
-                  </div>
+                  <div class="c-card__title">PATENT DATA ANALYSIS<br>特許データ解析</div>
                   <div class="c-card__text">
-                    <p>
-                      Explore technological innovation trends by mining patent
-                      databases. Analysts focus on patent classifications and
-                      citations to identify emerging technologies and market
-                      shifts, and to understand the strategic positioning of
-                      companies and inventors.
-                    </p>
+                    <p>Mining large-scale patent databases to reveal the architecture of technological knowledge. By mapping citation networks and classification structures, I investigate how innovation complexity shapes competitive landscapes and drives industrial evolution — with a focus on quantifying technological diversity and specialization.</p>
                   </div>
                 </div>
               </div>
-              <div class="c-card">
-                <div class="c-card__img-wrapper">
-                  <img class="c-card__img" src="img/service03.webp" alt="" />
+              <div class="c-card js-fade-up">
+                <div class="c-card__icon-wrapper">
+                  <i class="fa-solid fa-microchip c-card__icon"></i>
                 </div>
                 <div class="c-card__body">
-                  <div class="c-card__title">
-                    All Things Information Science
-                  </div>
+                  <div class="c-card__title">COMPUTER SCIENCE<br>コンピュータサイエンス</div>
                   <div class="c-card__text">
-                    <p>
-                      Having a strong interest and extensive experience in
-                      analyzing various big data using mathematical modeling and
-                      machine learning, excelling in implementations that
-                      minimize computational demands. I am always tuned in to
-                      the latest trends in Large Language Models (LLMs),
-                      ensuring to stay at the forefront of technological
-                      advancements.
-                    </p>
+                    <p>A broad passion for computational thinking — from algorithm design and data structures to machine learning and large language models. I am committed to translating mathematical rigor into practical, scalable solutions, and always tuned in to the latest advances in AI to stay at the forefront of technological innovation.</p>
                   </div>
                 </div>
               </div>
@@ -188,78 +121,58 @@
         </div>
       </section>
 
-      <!-- Biography Section -->
+      <!-- Biography -->
       <section class="p-biography l-section" id="biography">
         <div class="p-biography__inner l-inner">
-          <div class="p-biography__heading">
+          <div class="p-biography__heading c-section-heading js-fade-up">
             <h2 class="c-heading-primary">
               biography<span class="c-heading-primary__sub">自己紹介</span>
             </h2>
           </div>
-          <div class="p-biography__body">
+          <div class="p-biography__body js-fade-up">
             <div class="p-message">
               <div class="p-message__heading">
-                <span class="p-message__underline"
-                  >Cool Head, but Warm Heart</span
-                >
+                <span class="p-message__underline">Cool Head, but Warm Heart</span>
               </div>
               <div class="p-message__text">
                 <p>
-                  Rintaro Karashima is a second-year master’s student in the
-                  <b
-                    >Graduate School of Information Science at the University of
-                    Hyogo</b
-                  >, under the supervision of
-                  <b
-                    ><a
-                      class="p-biography__link"
-                      href="https://prodigium.jp/personal/"
-                      >Professor Hiroyasu Inoue</a
-                    ></b
-                  >. <br />
-                  His research focuses on quantifying and analyzing the
-                  complexity of corporation-technology networks. <br />
-                  By utilizing tools such as patent data, mathematical modeling,
-                  and network science, he aims to understand the potential
-                  impact of these networks on various industries.
+                  Rintaro Karashima is a Data Scientist at
+                  <b>Hutzper Inc.</b>,
+                  a Japanese AI startup.
                   <br />
-                  During his undergraduate studies from 2020 to 2024, where he
-                  earned a degree in Social Information Science from the
-                  University of Hyogo, he extensively engaged in large-scale
-                  data analysis and marketing problem-solving using machine
-                  learning and statistical analysis.
+                  He completed his master's degree in 2025 at the
+                  <b>Graduate School of Information Science, University of Hyogo</b>,
+                  under the supervision of
+                  <b><a class="p-biography__link" href="https://prodigium.jp/personal/">Professor Hiroyasu Inoue</a></b>.
+                  <br />
+                  His research focused on quantifying and analyzing the complexity of corporation-technology networks,
+                  utilizing patent data, mathematical modeling, and network science to understand how innovation structures shape industrial evolution.
+                  <br />
+                  He earned his undergraduate degree in Social Information Science from the University of Hyogo in 2024,
+                  where he engaged in large-scale data analysis and marketing problem-solving using machine learning and statistical analysis.
                 </p>
               </div>
             </div>
           </div>
-          <div class="p-biography__link">
-            <a
-              href="https://rintaro-karashima.notion.site/Biography-0a9bcaa7b5f0454d90a698c089732048?pvs=4"
-              class="c-btn"
-              >more</a
-            >
+          <div class="p-biography__link js-fade-up">
+            <a href="https://rintaro-karashima.notion.site/Biography-0a9bcaa7b5f0454d90a698c089732048?pvs=4" class="c-btn">more</a>
           </div>
         </div>
       </section>
 
-      <!-- Presentation Section -->
+      <!-- Research Publication -->
       <section class="p-publication l-section" id="publication">
         <div class="p-publication__inner l-inner">
-          <div class="p-publication__heading">
+          <div class="p-publication__heading c-section-heading js-fade-up">
             <h2 class="c-heading-primary">
-              research publication<span class="c-heading-primary__sub"
-                >研究実績</span
-              >
+              research publication<span class="c-heading-primary__sub">研究実績</span>
             </h2>
             <p class="p-publication__text">
-              Presentation materials and manuscripts for each can be viewed by
-              clicking “MORE >” (you will be redirected to the Notion website).
-              <br />
-              各学会での発表資料および原稿は「MORE
-              ▶」からご覧いただけます（Notion のウェブサイトに遷移します）。
+              Presentation materials and manuscripts for each can be viewed by clicking "MORE &gt;" (you will be redirected to the Notion website).<br />
+              各学会での発表資料および原稿は「MORE ▶」からご覧いただけます（Notion のウェブサイトに遷移します）。
             </p>
           </div>
-          <div class="p-publication__table">
+          <div class="p-publication__table js-fade-up">
             <table class="c-table01">
               <thead>
                 <tr>
@@ -270,254 +183,167 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Journal Article<br />(Under Review)</td>
-                  <td>--</td>
+                  <td><span class="c-badge c-badge--journal">Journal Article (Under Review)</span></td>
+                  <td></td>
                   <td>
-                    <a
-                      class="p-publication__link"
-                      href="https://arxiv.org/abs/2504.11932"
-                    >
-                      Rintaro Karashima, Hiroyasu Inoue, “Technological
-                      Complexity Based on Japanese Patent Data”
-                      <em>Scientific Reports</em><br />
-                      (arXiv:https://arxiv.org/abs/2504.11932)
+                    <a class="p-publication__link" href="https://arxiv.org/abs/2606.07202">
+                      Rintaro Karashima, Hiroyasu Inoue, "Technological Fitness and Regional Growth in Japan"<br />
+                      (arXiv:2606.07202)
                     </a>
                   </td>
                 </tr>
                 <tr>
-                  <td>Oral Presentation, English</td>
-                  <td>Jan. 21st-23rd, 2026<br>(Scheduled)</td>
+                  <td><span class="c-badge c-badge--journal">Journal Article (Under Review)</span></td>
+                  <td></td>
                   <td>
-                    <a
-                      class="p-publication__link"
-                      href="https://isarob.org/symposium/"
-                    >
-                    31st International Symposium on Artificial Life and
-                    Robotics, 11th International Symposium on BioComplexity,
-                    Oita Beppu B-Con plaza, Japan
+                    <a class="p-publication__link" href="https://arxiv.org/abs/2504.11932">
+                      Rintaro Karashima, Hiroyasu Inoue, "Technological Complexity Based on Japanese Patent Data" <em>Scientific Reports</em><br />
+                      (arXiv:2504.11932)
                     </a>
                   </td>
                 </tr>
                 <tr>
-                  <td>Oral Presentation, English</td>
-                  <td>Dec. 9th-11th, 2025<br>(Scheduled)</td>
+                  <td><span class="c-badge c-badge--oral">Oral Presentation, English</span></td>
+                  <td>Jan. 21st&ndash;23rd, 2026</td>
                   <td>
-                    <a
-                      class="p-publication__link"
-                      href="https://complexnetworks.org/"
-                    >
-                    The 14th International Conference on Complex Networks and their Applications,
-                    Binghamton University, USA
+                    <a class="p-publication__link" href="https://isarob.org/symposium/">
+                      31st International Symposium on Artificial Life and Robotics, 11th International Symposium on BioComplexity, Oita Beppu B-Con plaza, Japan
                     </a>
                   </td>
                 </tr>
                 <tr>
-                  <td>Poster Presentation, Japanese</td>
-                  <td>Oct. 18th, 2025<br>(Scheduled)</td>
+                  <td><span class="c-badge c-badge--oral">Oral Presentation, English</span></td>
+                  <td>Dec. 9th&ndash;11th, 2025</td>
                   <td>
-                    <a
-                      class="p-publication__link"
-                      href="https://hokkaido.ipsj.or.jp/info2025/"
-                    >
-                      Info Hokkaido 2025, Muroran Institute of Technology,
-                      Japan
+                    <a class="p-publication__link" href="https://complexnetworks.org/">
+                      The 14th International Conference on Complex Networks and their Applications, Binghamton University, USA
                     </a>
                   </td>
                 </tr>
                 <tr>
-                  <td>Oral Presentation, English</td>
-                  <td>Sep. 8th-12th, 2025<br>(Scheduled)</td>
+                  <td><span class="c-badge c-badge--poster">Poster Presentation, Japanese</span></td>
+                  <td>Oct. 18th, 2025</td>
                   <td>
-                    <a
-                      class="p-publication__link"
-                      href="https://www.ieice.org/jpn_r/activities/taikai/society/2025/en/"
-                    >
-                      The Institute of Electronics, Information and
-                      Communication Engineers Society Conference 2025, Okayama,
-                      Japan
+                    <a class="p-publication__link" href="https://hokkaido.ipsj.or.jp/info2025/">
+                      Info Hokkaido 2025, Muroran Institute of Technology, Japan
                     </a>
                   </td>
                 </tr>
                 <tr>
-                  <td>Oral Presentation, English</td>
-                  <td>Jan. 22nd-24th, 2025</td>
+                  <td><span class="c-badge c-badge--oral">Oral Presentation, English</span></td>
+                  <td>Sep. 8th&ndash;12th, 2025</td>
                   <td>
-                    <a
-                      class="p-publication__link"
-                      href="https://isarob.org/symposium/index.php?main_page=timetable#GS11"
-                    >
-                      30th International Symposium on Artificial Life and
-                      Robotics, 10th International Symposium on BioComplexity,
-                      Oita Beppu B-Con plaza, Japan
+                    <a class="p-publication__link" href="https://www.ieice.org/jpn_r/activities/taikai/society/2025/en/">
+                      The Institute of Electronics, Information and Communication Engineers Society Conference 2025, Okayama, Japan
                     </a>
                   </td>
                 </tr>
                 <tr>
-                  <td>Oral Presentation, Japanese</td>
-                  <td>Sep. 4th-6th, 2024</td>
+                  <td><span class="c-badge c-badge--oral">Oral Presentation, English</span></td>
+                  <td>Jan. 22nd&ndash;24th, 2025</td>
                   <td>
-                    <a
-                      class="p-publication__link"
-                      href="https://www.ipsj.or.jp/event/fit/fit2024/"
-                    >
-                      The 23rd Forum on Information Technology (FIT) 2024,
-                      Hiroshima Institute of Technology, Japan
+                    <a class="p-publication__link" href="https://isarob.org/symposium/index.php?main_page=timetable#GS11">
+                      30th International Symposium on Artificial Life and Robotics, 10th International Symposium on BioComplexity, Oita Beppu B-Con plaza, Japan
                     </a>
                   </td>
                 </tr>
                 <tr>
-                  <td>Poster Presentation, English</td>
-                  <td>Sep. 2nd-6th, 2024</td>
+                  <td><span class="c-badge c-badge--oral">Oral Presentation, Japanese</span></td>
+                  <td>Sep. 4th&ndash;6th, 2024</td>
                   <td>
-                    <a
-                      class="p-publication__link"
-                      href="https://ccs24.cssociety.org/"
-                    >
-                      Conference on Complex Systems (CCS) 2024, University of
-                      Exeter, England
-                    </a>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>Poster Presentation, English</td>
-                  <td>Jun. 3rd-5th, 2024</td>
-                  <td>
-                    <a
-                      class="p-publication__link"
-                      href="https://csh.ac.at/events/econophysics-colloquium-2024/"
-                    >
-                      The Econophysics Colloquium 2024, Complexity Science Hub,
-                      Vienna, Austria
+                    <a class="p-publication__link" href="https://www.ipsj.or.jp/event/fit/fit2024/">
+                      The 23rd Forum on Information Technology (FIT) 2024, Hiroshima Institute of Technology, Japan
                     </a>
                   </td>
                 </tr>
                 <tr>
-                  <td>Poster Presentation, Japanese</td>
-                  <td>Feb. 28th-29th, 2024</td>
+                  <td><span class="c-badge c-badge--poster">Poster Presentation, English</span></td>
+                  <td>Sep. 2nd&ndash;6th, 2024</td>
                   <td>
-                    <a
-                      class="p-publication__link"
-                      href="https://www.neteco.jp/sympo19"
-                    >
-                      The 19th Network Ecology Symposium, Nagasaki University,
-                      Japan
+                    <a class="p-publication__link" href="https://ccs24.cssociety.org/">
+                      Conference on Complex Systems (CCS) 2024, University of Exeter, England
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="c-badge c-badge--poster">Poster Presentation, English</span></td>
+                  <td>Jun. 3rd&ndash;5th, 2024</td>
+                  <td>
+                    <a class="p-publication__link" href="https://csh.ac.at/events/econophysics-colloquium-2024/">
+                      The Econophysics Colloquium 2024, Complexity Science Hub, Vienna, Austria
+                    </a>
+                  </td>
+                </tr>
+                <tr>
+                  <td><span class="c-badge c-badge--poster">Poster Presentation, Japanese</span></td>
+                  <td>Feb. 28th&ndash;29th, 2024</td>
+                  <td>
+                    <a class="p-publication__link" href="https://www.neteco.jp/sympo19">
+                      The 19th Network Ecology Symposium, Nagasaki University, Japan
                     </a>
                   </td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <div class="p-publication__link">
-            <a
-              href="https://rintaro-karashima.notion.site/Research-Publication-2416451860ba804890daf80f36fb6bb5"
-              class="c-btn"
-              >more</a
-            >
+          <div class="p-publication__link js-fade-up">
+            <a href="https://rintaro-karashima.notion.site/Research-Publication-2416451860ba804890daf80f36fb6bb5" class="c-btn">more</a>
           </div>
         </div>
       </section>
 
-      <!-- Contact Section -->
+      <!-- Contact -->
       <section class="p-contact" id="contact">
         <div class="l-inner">
-          <div class="p-contact__heading">
+          <div class="p-contact__heading c-section-heading js-fade-up">
             <h2 class="c-heading-primary">
-              contact / SNS<span class="c-heading-primary__sub"
-                >お問い合わせ/各種SNS</span
-              >
+              contact / SNS<span class="c-heading-primary__sub">お問い合わせ / 各種SNS</span>
             </h2>
           </div>
-          <div class="p-contact__body">
-            <div class="p-presentation__table">
-              <table class="c-table01">
-                <tr>
-                  <th>E-mail</th>
-                  <td>
-                    <a>
-                      rintaro.karashima[at]gmail.com<br />
-                      (Please convert "[at]" into "@".)
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Linkedin</th>
-                  <td>
-                    <a
-                      class="p-contact__link"
-                      href="https://www.linkedin.com/in/rintaro-karashima"
-                    >
-                      https://www.linkedin.com/in/rintaro-karashima
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Instagram (Private)</th>
-                  <td>
-                    <a
-                      class="p-contact__link"
-                      href="https://www.instagram.com/rintarokarashima/"
-                    >
-                      https://www.instagram.com/rintarokarashima/
-                    </a>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Affiliation</th>
-                  <td>
-                    <a
-                      class="p-contact__link"
-                      href="https://prodigium.jp/personal/ja/top/"
-                    >
-                      Inoue Laboratory, <br class="u-sp-only" />Department of
-                      Data Science and Computational Science,
-                      <br class="u-sp-only" />Graduate School of Information
-                      Science, <br class="u-sp-only" />University of Hyogo
-                    </a>
-                  </td>
-                </tr>
-              </table>
+          <div class="p-contact__body js-fade-up">
+            <div class="p-contact__grid">
+              <div class="p-contact__item">
+                <span class="p-contact__label">E-mail</span>
+                <span class="p-contact__value">rintaro.karashima[at]gmail.com<br><small>(Please convert "[at]" into "@".)</small></span>
+              </div>
+              <div class="p-contact__item">
+                <span class="p-contact__label">LinkedIn</span>
+                <a class="p-contact__link" href="https://www.linkedin.com/in/rintaro-karashima">linkedin.com/in/rintaro-karashima</a>
+              </div>
+              <div class="p-contact__item">
+                <span class="p-contact__label">Instagram</span>
+                <a class="p-contact__link" href="https://www.instagram.com/rintarokarashima/">instagram.com/rintarokarashima</a>
+              </div>
+              <div class="p-contact__item">
+                <span class="p-contact__label">Affiliation</span>
+                <span class="p-contact__value">Data Scientist<br>Hutzper Inc.</span>
+              </div>
             </div>
           </div>
-          <!-- <div class="p-contact__link">
-            <a href="contact.html" class="c-btn">more</a>
-          </div> -->
         </div>
       </section>
+
     </main>
 
     <footer class="l-footer">
       <nav class="l-footer-nav">
         <ul class="l-footer-nav__list">
-          <!-- <li class="l-footer-nav__item"><a class="l-footer-nav__link" href=".">HOME</a></li> -->
-          <!-- <li class="l-footer-nav__item"><a class="l-footer-nav__link" href="news.html">news</a></li> -->
-          <li class="l-footer-nav__item">
-            <a class="l-footer-nav__link" href="#interest">interest</a>
-          </li>
-          <li class="l-footer-nav__item">
-            <a class="l-footer-nav__link" href="#biography">biography</a>
-          </li>
-          <li class="l-footer-nav__item">
-            <a class="l-footer-nav__link" href="#publication"
-              >research publication</a
-            >
-          </li>
-          <!-- <li class="l-footer-nav__item"><a class="l-footer-nav__link" href="recruit.html">recruit</a></li> -->
-          <li class="l-footer-nav__item">
-            <a class="l-footer-nav__link" href="#contact">contact / sns</a>
-          </li>
+          <li class="l-footer-nav__item"><a class="l-footer-nav__link" href="#interest">interest</a></li>
+          <li class="l-footer-nav__item"><a class="l-footer-nav__link" href="#biography">biography</a></li>
+          <li class="l-footer-nav__item"><a class="l-footer-nav__link" href="#publication">research publication</a></li>
+          <li class="l-footer-nav__item"><a class="l-footer-nav__link" href="#contact">contact / sns</a></li>
         </ul>
       </nav>
       <div class="c-copyright">
-        <a href="." class="c-copyright__link"
-          >&copy;2024 Rintaro Karashima All Rights Reserved.</a
-        >
+        <a href="." class="c-copyright__link">&copy;2024 Rintaro Karashima All Rights Reserved.</a>
       </div>
     </footer>
 
-    <script src="js/jquery-3.6.0.min.js" defer></script>
-    <script src="js/swiper/swiper-bundle.js" defer></script>
-    <script src="js/polyfill/stickyfill.min.js" defer></script>
+    <!-- Page top -->
+    <div class="c-page-top js-page-top">
+      <a href="#" class="c-page-top__link" aria-label="Back to top">&#8679;</a>
+    </div>
+
     <script src="js/script.js" defer></script>
   </body>
 </html>

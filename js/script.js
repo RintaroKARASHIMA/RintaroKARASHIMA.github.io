@@ -1,98 +1,114 @@
-$(function () {
-  //ヒーローの高さを100%に調整
-  heroHeight();
+// ============================================================
+// Scroll-based Fade-Up Animations (Intersection Observer)
+// ============================================================
+function initScrollAnimations() {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
 
-  $(window).resize(function () {
-    heroHeight();
-  });
+  document.querySelectorAll(".js-fade-up").forEach((el) => observer.observe(el));
+}
 
-  function heroHeight() {
-    var windowHeight = $(window).height();
-    $(".p-hero").height(windowHeight);
+// ============================================================
+// Header: transparent → frosted glass on scroll
+// ============================================================
+function initHeaderScroll() {
+  const header = document.querySelector(".l-header");
+  if (!header) return;
+
+  function update() {
+    header.classList.toggle("is-active", window.scrollY > 10);
   }
 
-  //ページ内スクロール
-  $('a[href^="#"]').on("click", function () {
-    var speed = 300;
-    var href = $(this).attr("href");
-    var target = $(href == "#" || href == "" ? "html" : href);
-    var position = target.offset().top;
-    $("html, body").animate(
-      {
-        scrollTop: position,
-      },
-      speed,
-      "swing"
-    );
-    return false;
+  window.addEventListener("scroll", update, { passive: true });
+  update();
+}
+
+// ============================================================
+// Smooth Scroll for anchor links (with header offset)
+// ============================================================
+function initSmoothScroll() {
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", (e) => {
+      const href = anchor.getAttribute("href");
+      if (!href || href === "#") {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        return;
+      }
+
+      const target = document.querySelector(href);
+      if (!target) return;
+
+      e.preventDefault();
+
+      const headerH = parseInt(
+        getComputedStyle(document.documentElement)
+          .getPropertyValue("--header-h-sm")
+          .trim() || "64"
+      );
+      const top = target.getBoundingClientRect().top + window.scrollY - headerH;
+
+      window.scrollTo({ top, behavior: "smooth" });
+
+      // Close mobile menu if open
+      closeMobileMenu();
+    });
   });
+}
 
-  //ページトップへ戻る
-  var $pageTop = $(".c-page-top");
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
-      $pageTop.fadeIn();
-    } else {
-      $pageTop.fadeOut();
-    }
+// ============================================================
+// Mobile Hamburger Menu
+// ============================================================
+function closeMobileMenu() {
+  const btnMenu = document.querySelector(".js-btn-menu");
+  const globalNav = document.querySelector(".p-global-nav");
+  if (!btnMenu || !globalNav) return;
+  btnMenu.classList.remove("is-active");
+  globalNav.classList.remove("is-show");
+}
+
+function initMobileMenu() {
+  const btnMenu = document.querySelector(".js-btn-menu");
+  const globalNav = document.querySelector(".p-global-nav");
+  if (!btnMenu || !globalNav) return;
+
+  btnMenu.addEventListener("click", () => {
+    btnMenu.classList.toggle("is-active");
+    globalNav.classList.toggle("is-show");
   });
-  $pageTop.on("click", function () {
-    $("body,html").animate(
-      {
-        scrollTop: 0,
-      },
-      300
-    );
-    return false;
-  });
+}
 
-  //スクロールに応じてヘッダーの背景色が変化
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > 0) {
-      $(".l-header").addClass("is-active");
-    } else {
-      $(".l-header").removeClass("is-active");
-    }
-  });
+// ============================================================
+// Page Top Button
+// ============================================================
+function initPageTop() {
+  const pageTop = document.querySelector(".js-page-top");
+  if (!pageTop) return;
 
-  //ハンバーガーメニュー
-  var btnMenu = $(".js-btn-menu");
-  var globalNav = $(".p-global-nav");
+  window.addEventListener(
+    "scroll",
+    () => {
+      pageTop.style.display = window.scrollY > 320 ? "block" : "none";
+    },
+    { passive: true }
+  );
+}
 
-  btnMenu.on("click", function () {
-    btnMenu.toggleClass("is-active");
-    globalNav.toggleClass("is-show");
-  });
-
-  //IE11対応 sitcky
-  if ($(".p-breadcrumb").length) {
-    var elements = $(".p-breadcrumb");
-    Stickyfill.add(elements);
-  }
-});
-
-const swiper = new Swiper(".js-swiper-container", {
-  // Optional parameters
-  autoplay: {
-    delay: 4000,
-  },
-  speed: 500,
-  loop: true,
-  effect: "fade",
-
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
+// ============================================================
+// Init
+// ============================================================
+document.addEventListener("DOMContentLoaded", () => {
+  initScrollAnimations();
+  initHeaderScroll();
+  initSmoothScroll();
+  initMobileMenu();
+  initPageTop();
 });
